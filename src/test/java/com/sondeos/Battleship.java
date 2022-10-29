@@ -4,6 +4,6 @@ public class Battleship {
     }
 
     public String shot(int userShot) {
-        return null;
+        return "miss";
     }
 }
