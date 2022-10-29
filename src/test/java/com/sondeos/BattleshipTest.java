@@ -81,4 +81,19 @@ public class BattleshipTest {
 
     }
 
+    @Test
+    public void test06() {
+
+        Battleship battleship = new Battleship();
+        Set<Integer> locations = Set.of(1,2,3);
+        battleship.setLocations(locations);
+        int userShot1 = 1;
+
+        String result = battleship.shot(userShot1);
+        result = battleship.shot(userShot1);
+        result = battleship.shot(userShot1);
+
+        assertEquals("hit", result);
+
+    }
 }
