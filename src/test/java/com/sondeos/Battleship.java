@@ -4,7 +4,7 @@ public class Battleship {
     }
 
     public String shot(int userShot) {
-        if(userShot == 2) {
+        if(userShot == 2 || userShot == 3) {
             return "hit";
         } else {
             return "miss";
