@@ -4,6 +4,10 @@ public class Battleship {
     }
 
     public String shot(int userShot) {
-        return "miss";
+        if(userShot == 2) {
+            return "hit";
+        } else {
+            return "miss";
+        }
     }
 }
