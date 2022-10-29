@@ -31,6 +31,20 @@ public class BattleshipTest {
         assertEquals("hit", result);
 
     }
-    
+
+    @Test
+    public void test03() {
+
+        Battleship battleship = new Battleship();
+        int[] locations = {2,3,4};
+        battleship.setLocations(locations);
+        int userShot = 3;
+
+        String result = battleship.shot(userShot);
+
+        assertEquals("hit", result);
+
+    }
+
 
 }
