@@ -1,15 +1,18 @@
 package com.sondeos;
+
+import java.util.Set;
+
 public class Battleship {
-    private int[] locations;
+    private Set<Integer> locations;
 
     private int hits = 0;
-    public void setLocations(int[] locations) {
+    public void setLocations(Set<Integer> locations) {
         this.locations = locations;
     }
 
     public String shot(int userShot) {
         String ret = "";
-        if (locations[0] == userShot || locations[1] == userShot || locations[2] == userShot) {
+        if (locations.contains(userShot)) {
             hits++;
             ret = "hit";
             if (hits == 3) {
