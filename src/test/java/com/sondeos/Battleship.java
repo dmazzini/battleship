@@ -7,7 +7,7 @@ public class Battleship {
     }
 
     public String shot(int userShot) {
-        if(locations[0] == userShot || locations[1] == userShot || locations[2] == userShot) {
+if(locations[0] == userShot || locations[1] == userShot || locations[2] == userShot) {
             return "hit";
         } else {
             return "miss";
