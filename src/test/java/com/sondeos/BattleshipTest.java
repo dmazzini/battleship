@@ -18,4 +18,19 @@ public class BattleshipTest {
 
     }
 
+    @Test
+    public void test02() {
+
+        Battleship battleship = new Battleship();
+        int[] locations = {2,3,4};
+        battleship.setLocations(locations);
+        int userShot = 2;
+
+        String result = battleship.shot(userShot);
+
+        assertEquals("hit", result);
+
+    }
+    
+
 }
